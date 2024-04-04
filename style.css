@@ -10,7 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 0px;
+    padding: 6vmax 0px;
     background-color: hsl(210, 100%, 95%);
 }
 main{
