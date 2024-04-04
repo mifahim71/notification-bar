@@ -1,0 +1,166 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    background-color: hsl(210, 100%, 95%);
+}
+main{
+    width: 750px;
+    height: auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainInnerContainer{
+    width: 92%;
+    height: 100%;
+}
+.notificationHead{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.notificationHead h1{
+    font-size: 1.5rem;
+}
+.notificationHead span{
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    background-color: darkblue;
+    color: white;
+    border-radius: 3px;
+}
+.notificationHead h2{
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(219, 14%, 63%);
+}
+.markWeeber, .angelaGrey, .jacobThompson{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: hsl(212, 100%, 97%);
+    border-radius: 10px;
+    gap: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.markWeeber:hover, .angelaGrey:hover, .jacobThompson:hover{
+    background-color: hsl(217, 96%, 89%);
+}
+.kimberlySmith, .nathanPeterson, .annakim, .rizkoHasanUddin{
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    gap: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.kimberlySmith:hover, .nathanPeterson:hover, .annakim:hover, .rizkoHasanUddin:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.kimberlySmith{
+    justify-content: space-between;
+    gap: 20px;
+}
+.kimberlySmithInner{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.kimberlySmithInner img{
+    width: 50px;
+    height: 50px;
+    object-position: center;
+    object-fit: cover;
+}
+.mainInnerContainer img{
+    width: 50px;
+}
+.text-notifications h1{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.text-notifications .userName, .text-notifications .postName{
+    font-weight: 900;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+.text-notifications .userName:hover, .text-notifications .postName:hover{
+    color: hsl(219, 85%, 26%);
+}
+.text-notifications .redDot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: hsl(1, 90%, 64%);
+    border: none;
+    outline: none;
+}
+.text-notifications .time{
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 2px;
+}
+.chessImg{
+    width: 50px;
+}
+.secretMessageContainer{
+    width: 100%;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -10px;
+}
+.secretMessage{
+    width: calc(100% - 90px);
+    padding: 15px;
+    border: 1px solid hsl(219, 14%, 63%);
+    cursor: pointer;
+}
+.secretMessage:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.secretMessage h4{
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+@media (max-width: 800px) {
+    main{
+        width: 90vw;
+    }   
+}
+@media (max-width: 500px) {
+    .notificationHead h1{
+        font-size: 1.2rem;
+    }
+    .notificationHead span{
+        font-size: 1rem;
+    }
+    .notificationHead h2{
+        font-size: .8rem;
+    }
+    .text-notifications h1{
+        font-size: .9rem;
+    }
+}
